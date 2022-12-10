@@ -45,5 +45,6 @@ async def help(client, message):
     await message.reply_text(
         text=HELP_MSG,
         disable_web_page_preview=True,
+      reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(text="OWNER",url = "t.me/BamsiBeyrek")]]),
         reply_to_message_id=message.message_id
     )    
